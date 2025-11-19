@@ -2,6 +2,9 @@ package me.askew.wimbo.user.domain.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import me.askew.wimbo.unit.domain.model.Unit;
+
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -22,6 +25,9 @@ public class User {
     private String address;
     private String role;
     private String status;
+
+    @OneToMany
+    private List<Unit> units;
 }
 
 

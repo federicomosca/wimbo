@@ -2,7 +2,7 @@ package me.askew.wimbo.user.domain.DTOs;
 
 import jakarta.validation.constraints.NotBlank;
 
-public record LoginDTO (
+public record LoginRequest(
 
         @NotBlank(message = "Username is required")
         String username,

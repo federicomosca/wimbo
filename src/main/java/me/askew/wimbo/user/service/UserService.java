@@ -1,11 +1,11 @@
 package me.askew.wimbo.user.service;
 
-import me.askew.wimbo.user.domain.DTOs.LoginDTO;
-import me.askew.wimbo.user.domain.DTOs.SignUpDTO;
-import me.askew.wimbo.user.domain.DTOs.UserResponseDTO;
+import me.askew.wimbo.user.domain.DTOs.LoginRequest;
+import me.askew.wimbo.user.domain.DTOs.SignUpRequest;
+import me.askew.wimbo.user.domain.DTOs.UserResponse;
 
 public interface UserService {
 
-    UserResponseDTO signUp(SignUpDTO signUpDTO);
-    UserResponseDTO login(LoginDTO loginDTO);
+    UserResponse signUp(SignUpRequest signUpRequest);
+    UserResponse login(LoginRequest loginRequest);
 }

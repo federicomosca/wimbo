@@ -1,6 +1,6 @@
 package me.askew.wimbo.user.domain.DTOs;
 
-public record UserResponseDTO(
+public record UserResponse(
         Long id,
         String username,
         String email
